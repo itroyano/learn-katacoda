@@ -53,6 +53,11 @@
       "title": "Operator SDK with Helm, Memcached"
     },
     {
+      "external_link": "https://learn.openshift.com/operatorframework/operator-admission-webhooks/",
+      "course_id": "operator-admission-webhooks",
+      "title": "Operator SDK - Admission Webhooks"
+    },
+    {
       "external_link": "https://learn.openshift.com/operatorframework/rbac/",
       "course_id": "rbac",
       "title": "Kubernetes - rbac"
