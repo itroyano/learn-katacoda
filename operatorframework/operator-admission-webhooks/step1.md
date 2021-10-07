@@ -1,12 +1,20 @@
 Let's begin by creating a new project called `myproject`:
+
 ```
 oc new-project myproject
 ```{{execute}}
 <br>
+Let's now copy the memcached operator to our working directory:
 
-Now we copy/paste the memcached operator in the `myproject` namespace :
 ```
-\cp /tmp/memcached_types.go api/v1alpha1/memcached_types.go
+cp -r /tmp/memcached-operator $HOME/projects
 ```{{execute}}
+<br>
+Navigate to the directory:
+
+```
+cd $HOME/projects/memcached-operator
+```{{execute}}
+<br>
 
 
