@@ -7,12 +7,12 @@
     "time": "15-20 minutes",
     "backend": {
       "autoUpgrade": false,
-      "imageid": "openshift-3-11",
+      "imageid": "openshift-4-7",
       "port": 8443
     },
     "environment": {
         "showdashboard": true,
-        "dashboard": "Dashboard",
+        "dashboards": [{"name": "Console", "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com"}],
         "uilayout": "terminal-iframe"
     },
     "details": {

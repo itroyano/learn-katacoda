@@ -1,0 +1,48 @@
+{
+    "title": "Using OpenShift",
+    "icon": "fa-openshift",
+    "courses": [
+      {
+        "pathway_id": "openshift/introduction",
+        "course_id": "cluster-access",
+        "id": "cluster-access",
+        "title": "Logging in to an OpenShift Cluster"
+      },
+      {
+        "pathway_id": "openshift/introduction",
+        "course_id": "transferring-files",
+        "id": "transferring-files",
+        "title": "Transferring Files in and out of Containers"
+      },
+      {
+        "pathway_id": "openshift/introduction",
+        "course_id": "port-forwarding",
+        "id": "port-forwarding",
+        "title": "Connecting to a Database Using Port Forwarding"
+      },
+      {
+        "pathway_id": "openshift/introduction",
+        "course_id": "resource-objects",
+        "id": "resource-objects",
+        "title": "Using the CLI to Manage Resource Objects"
+      },
+      {
+        "pathway_id": "openshift/introduction",
+        "course_id": "deploying-images",
+        "id": "deploying-images",
+        "title": "Deploying Applications From Images"
+      },
+      {
+        "pathway_id": "openshift/introduction",
+        "course_id": "deploying-python",
+        "id": "deploying-python",
+        "title": "Deploying Applications From Source"
+      },
+      {
+        "pathway_id": "openshift/introduction",
+        "title": "How to set up Prometheus and Grafana on OpenShift",
+        "course_id": "deploy-prometheus-grafana",
+        "id": "deploy-prometheus-grafana"
+      }
+    ]
+  }
