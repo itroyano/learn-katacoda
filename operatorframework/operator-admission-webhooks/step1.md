@@ -7,7 +7,7 @@ oc new-project myproject
 Let's now copy the memcached operator to our working directory:
 
 ```
-cp -r /tmp/memcached-operator $HOME/projects
+\cp -r /tmp/memcached-operator $HOME/projects
 ```{{execute}}
 <br>
 Navigate to the directory:
