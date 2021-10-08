@@ -17,3 +17,6 @@ ssh root@host01 'yum install jq -y'
 wget https://github.com/operator-framework/operator-sdk/releases/download/v1.9.0/operator-sdk_linux_amd64
 chmod +x operator-sdk_linux_amd64
 mv operator-sdk-v1.6.2-x86_64-linux-gnu /root/tutorial/go/bin/operator-sdk -f
+
+#Get Memcached-operator
+wget https://github.com/operator-framework/operator-sdk/tree/master/testdata/go/v3/memcached-operator -P /root/tutorial/

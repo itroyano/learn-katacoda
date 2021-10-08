@@ -53,7 +53,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "client": [{"file": ".init.sh", "target": "~/"},{"file": "memcached_types.go", "target": "/tmp"},{"file": "memcached_controller.go", "target": "/tmp"},{"file": "cache_v1alpha1_memcached.yaml", "target": "/tmp"}]
+      "client": [{"file": "memcached_types.go", "target": "/tmp"},{"file": "memcached_controller.go", "target": "/tmp"},{"file": "cache_v1alpha1_memcached.yaml", "target": "/tmp"}]
     }
   },
   "files": [],
