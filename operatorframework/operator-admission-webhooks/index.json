@@ -53,7 +53,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "client": [{"file": ".set-operator.sh", "target": "~/", "chmod": "+x"}]
+      "client": [{"file": "set-operator.sh", "target": "/root/tutorial"}]
     }
   },
   "files": [],
