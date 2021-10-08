@@ -8,8 +8,11 @@ oc new-project myproject
 Navigate to the directory where memcached operator is already built:
 
 ```
-cd $HOME/tutorial/projects/memcached-operator
+cd $HOME/projects/memcached-operator
 ```{{execute}}
 <br>
 
+oc apply -f config/crd/bases/cache.example.com_memcacheds.yaml
+```{{execute}}
+<br>
 
