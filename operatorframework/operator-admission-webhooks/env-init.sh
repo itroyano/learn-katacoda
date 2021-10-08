@@ -27,7 +27,6 @@ operator-sdk create api --group cache --version v1alpha1 --kind Memcached --reso
 
 #Get Memcached-operator
 wget -e robots=off -r -nH -np --cut-dirs=7 https://github.com/operator-framework/operator-sdk/tree/master/testdata/go/v3/memcached-operator -P /root/tutorial/temp
-
 rsync -a -v /root/tutorial/temp/memcached-operator /root/projects/memcached-operator
 make generate
 make manifests
