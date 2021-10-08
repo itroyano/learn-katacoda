@@ -20,7 +20,7 @@ mv operator-sdk-v1.6.2-x86_64-linux-gnu /root/tutorial/go/bin/operator-sdk -f
 
 #setup Memcached-operator
 oc new-project myproject
-mkdir /root/projects/memcached-operator
+mkdir -p /root/projects/memcached-operator
 cd /root/projects/memcached-operator
 operator-sdk init --domain example.com --repo github.com/example/memcached-operator
 operator-sdk create api --group cache --version v1alpha1 --kind Memcached --resource --controller
