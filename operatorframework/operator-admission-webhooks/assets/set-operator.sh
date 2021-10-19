@@ -13,8 +13,8 @@ operator-sdk create api --group cache --version v1alpha1 --kind Memcached --reso
 #Get Memcached-operator
 #wget -e robots=off -r -nH -np --cut-dirs=7 https://github.com/operator-framework/operator-sdk/tree/master/testdata/go/v3/memcached-operator -P /root/tutorial/temp
 #rsync -a -v /root/tutorial/temp/memcached-operator /root/projects/memcached-operator
-wget https://raw.githubusercontent.com/operator-framework/operator-sdk/master/testdata/go/v3/memcached-operator/config/samples/cache_v1alpha1_memcached.yaml -P /root/projects/memcached-operator/config/samples
-wget https://raw.githubusercontent.com/operator-framework/operator-sdk/master/testdata/go/v3/memcached-operator/api/v1alpha1/memcached_types.go -p /root/projects/memcached-operator/api/v1alpha1
+wget -q https://raw.githubusercontent.com/operator-framework/operator-sdk/master/testdata/go/v3/memcached-operator/config/samples/cache_v1alpha1_memcached.yaml -O config/samples/cache_v1alpha1_memcached.yaml
+wget -q https://raw.githubusercontent.com/operator-framework/operator-sdk/master/testdata/go/v3/memcached-operator/api/v1alpha1/memcached_types.go -O api/v1alpha1/memcached_types.go
 
 
 make generate
