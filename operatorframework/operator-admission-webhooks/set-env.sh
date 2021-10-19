@@ -28,4 +28,4 @@ make manifests
 
 
 cd ~/tutorial
-clear
+#clear
