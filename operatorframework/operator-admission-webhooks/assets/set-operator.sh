@@ -11,7 +11,11 @@ operator-sdk init --domain example.com --repo github.com/example/memcached-opera
 operator-sdk create api --group cache --version v1alpha1 --kind Memcached --resource --controller
 
 #Get Memcached-operator
-wget -e robots=off -r -nH -np --cut-dirs=7 https://github.com/operator-framework/operator-sdk/tree/master/testdata/go/v3/memcached-operator -P /root/tutorial/temp
-rsync -a -v /root/tutorial/temp/memcached-operator /root/projects/memcached-operator
+#wget -e robots=off -r -nH -np --cut-dirs=7 https://github.com/operator-framework/operator-sdk/tree/master/testdata/go/v3/memcached-operator -P /root/tutorial/temp
+#rsync -a -v /root/tutorial/temp/memcached-operator /root/projects/memcached-operator
+wget https://raw.githubusercontent.com/operator-framework/operator-sdk/master/testdata/go/v3/memcached-operator/config/samples/cache_v1alpha1_memcached.yaml
+wget https://raw.githubusercontent.com/operator-framework/operator-sdk/master/testdata/go/v3/memcached-operator/api/v1alpha1/memcached_types.go
+
+
 make generate
 make manifests
