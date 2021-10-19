@@ -21,7 +21,7 @@ operator-sdk create api --group cache --version v1alpha1 --kind Memcached --reso
 wget -q https://raw.githubusercontent.com/operator-framework/operator-sdk/v1.9.0/testdata/go/v3/memcached-operator/controllers/memcached_controller.go -O controllers/memcached_controller.go
 wget -q https://raw.githubusercontent.com/operator-framework/operator-sdk/master/testdata/go/v3/memcached-operator/config/samples/cache_v1alpha1_memcached.yaml -O config/samples/cache_v1alpha1_memcached.yaml
 wget -q https://raw.githubusercontent.com/operator-framework/operator-sdk/master/testdata/go/v3/memcached-operator/api/v1alpha1/memcached_types.go -O api/v1alpha1/memcached_types.go
-
+go get k8s.io/api/apps/v1@v0.20.2
 
 make generate
 make manifests
