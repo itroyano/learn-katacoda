@@ -1,8 +1,7 @@
 
-1. Run the Memcached operator. It contains sample codes to run x number of memcached pods.
+The Memcached Operator is already built with spec.size in the custom resource.
 
-<br>
-Navigate to the directory for memcached operator sample code :
+Navigate to the memcached operator directory:
 
 ```
 cd $HOME/projects/memcached-operator

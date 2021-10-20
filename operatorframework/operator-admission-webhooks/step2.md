@@ -13,15 +13,9 @@ kind: Memcached
 metadata:
   name: memcached-sample
 spec:
-  size: 3
+  size: 1
 </pre>
 
-You can easily update this file by running the following command:
-
-```
-\cp /tmp/cache_v1alpha1_memcached.yaml config/samples/cache_v1alpha1_memcached.yaml
-```{{execute}}
-<br>
 Ensure you are currently scoped to the `myproject` Namespace:
 
 ```
@@ -40,18 +34,28 @@ Verify the memcached exists:
 oc get memcached
 ```{{execute}}
 <br>
-Verify the Memcached operator has created 3 pods:
+Verify the Memcached operator has created 1 pods:
 
 ```
 oc get pods
 ```{{execute}}
 <br>
-Verify that status shows the name of the pods currently owned by the Memcached:
+
+This marks the end of the basic operator setup.
+
+You can delete the deployed operator, CR and CRD by
 
 ```
-oc get memcached memcached-sample -o yaml
+kubectl delete -f config/samples/cache_v1_memcached.yaml
 ```{{execute}}
 <br>
+
+```
+kustomize build config/default | kubectl delete -f -
+```{{execute}}
+
+
+
 Increase the number of replicas owned by the Memcached:
 
 ```
