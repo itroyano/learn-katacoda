@@ -53,7 +53,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "client": [{"file": "memcached_webhook.go", "target": "/tmp"}]
+      "client": [{"file": "memcached_webhook.go", "target": "/tmp"},{"file": "kustomization.yaml", "target": "/tmp"}]
     }
   },
   "files": [],
