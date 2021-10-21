@@ -1,15 +1,15 @@
 
 **Note:** The next two subsections explain how the controller watches resources and how the reconcile loop is triggered.
 
-Let's now observe the default `controllers/memcached_controller.go` file:
+Let's now observe the default `api/v1alpha1/memcached_webhook.go` file:
 
 ```
-cat controllers/memcached_controller.go
+cat api/v1alpha1/memcached_webhook.go
 ```{{execute}}
 
 This default controller requires additional logic so we can trigger our reconciler whenever `kind: Memcached` objects are added, updated, or deleted. We also want to trigger the reconciler whenever Deployment owned by a given Memcached are added, updated, and deleted as well. To accomplish this. we modify the controller's `SetupWithManager` method. 
 
-For this example replace the generated controller at `controllers/memcached_controller.go` with the following code.
+For this example replace the generated controller at `api/v1alpha1/memcached_webhook.go` with the following code.
 
 <pre class="file">
 
@@ -199,7 +199,7 @@ func (r *MemcachedReconciler) SetupWithManager(mgr ctrl.Manager) error {
 You can easily update this file by running the following command:
 
 ```
-\cp /tmp/memcached_controller.go controllers/memcached_controller.go
+\cp /tmp/memcached_webhook.go api/v1alpha1/memcached_webhook.go
 ```{{execute}}
 
 `go mod tidy`  ensures that the go.mod file matches the source code in the module. It adds any missing module requirements necessary to build the current module's packages and dependencies, and it removes requirements on modules that don't provide any relevant packages. It also adds any missing entries to go.sum and removes unnecessary entries.

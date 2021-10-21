@@ -46,7 +46,7 @@ This marks the end of the basic operator setup.
 You can delete the deployed operator, CR and CRD by
 
 ```
-kubectl delete -f config/samples/cache_v1_memcached.yaml
+kubectl delete -f config/samples/cache_v1alpha1_memcached.yaml
 ```{{execute}}
 <br>
 
